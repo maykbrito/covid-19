@@ -1,11 +1,11 @@
 import useStats from "../utils/useStats"
 
 export default function Stats({url}) {
-    const stats = useStats(url)
+    const {stats, loading, error} = useStats(url)
 
     if (!stats) return <p>Loading...</p>
-
-    console.log(stats)
+    if (loading) return <p>Loading...</p>
+    if (error) return <p>error...</p>
 
     return (
         <section className="stats">
