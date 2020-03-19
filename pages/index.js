@@ -22,5 +22,7 @@ export default function IndexPage() {
 
     if (!stats) return <p>Loading...</p>
 
+    console.log(stats)
+
     return <h1>Great!</h1>
 }
