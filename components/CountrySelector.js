@@ -16,6 +16,7 @@ export default function CountrySelector() {
         <option 
             key={key} 
             value={code}
+            // selected={selectedCountry === code}
         >
             {country}
         </option>
@@ -23,16 +24,15 @@ export default function CountrySelector() {
 
     return (
         <section className="country-selector">
-            <h2>{selectedCountry}</h2>
             <select onChange={e => {
-              setSelectedCountry(e.target.value)
+              setSelectedCountry(e.target.value)              
             }}
+            value={selectedCountry}
             >
                 {options}
             </select>
 
             <Stats url={`https://covid19.mathdro.id/api/countries/${selectedCountry}`}></Stats>
-
         </section>
     )
 }
