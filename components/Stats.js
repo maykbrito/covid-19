@@ -7,21 +7,26 @@ const StatsGrid = styled.div`
     gap: 2rem;
 
     margin-top: 2rem;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
 `
 
 const StatBlock = styled.div`
     background: #f9f9f9;
     box-shadow: 0 0 1px rgba(0,0,0,.2), 0 2px 4px rgba(0,0,0,.1);
-    border-radius: 5px;
+    border-radius: 6px;
     margin-bottom: 20px;
     text-shadow: 1px 1px 1px rgba(0,0,0,.1);
+
     header {
         border-radius: 5px 5px 0 0;
         padding: 20px 0;
         background: #dd5555;
         text-align: center;
         color: #fff;
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
     article {
         text-align: center;
@@ -29,7 +34,7 @@ const StatBlock = styled.div`
         
         h3 {
             color: #dd5555;
-            font-size: 1em;
+            font-size: 1.4em;
         }
     }
 `

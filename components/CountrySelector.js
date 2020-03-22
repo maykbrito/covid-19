@@ -1,8 +1,13 @@
 import { useState } from "react"
+import styled from "styled-components"
 
 import Stats from  "../components/Stats"
 
 import useStats from "../utils/useStats"
+
+const CountrySelectorWrapper = styled.section`
+    text-align: center;
+`
 
 export default function CountrySelector() {
     const { stats: countries, loading, error } = useStats("https://covid19.mathdro.id/api/countries")
@@ -23,7 +28,7 @@ export default function CountrySelector() {
     ))
 
     return (
-        <section className="country-selector">
+        <CountrySelectorWrapper>
             <select onChange={e => {
               setSelectedCountry(e.target.value)              
             }}
@@ -33,6 +38,6 @@ export default function CountrySelector() {
             </select>
 
             <Stats url={`https://covid19.mathdro.id/api/countries/${selectedCountry}`}></Stats>
-        </section>
+        </CountrySelectorWrapper>
     )
 }
