@@ -1,5 +1,6 @@
-
-<img width="70%" align="center" src="https://i.imgur.com/SroyvTi.png" alt="Covid Image"/>
+<p align="center">
+<img width="70%" src="https://i.imgur.com/SroyvTi.png" alt="Covid Image"/>
+</p>
 
 <h1 align="center">Covid</h1>
 <p align="center">Projeto <strong>Covid-19</strong> desenvolvido afim de testar API de informações do Coronavirus 😷</p>
