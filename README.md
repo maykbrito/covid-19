@@ -1,4 +1,6 @@
-<img src="https://i.imgur.com/Bm0VjhJ.jpg" align="center" alt="Covid Image"></img>
+
+<img width="70%" align="center" src="https://i.imgur.com/SroyvTi.png" alt="Covid Image"/>
+
 <h1 align="center">Covid</h1>
 <p align="center">Projeto <strong>Covid-19</strong> desenvolvido afim de testar API de informações do Coronavirus 😷</p>
 <p align="center">
@@ -12,6 +14,7 @@
     <img src="https://img.shields.io/badge/nextjs-9.3-informational"></img>
   </a>
 </p>
+
 
 <p align="center">
   <a href="#-instalação-e-execução">Instalação e execução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
