@@ -58,5 +58,6 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 ---
 
+<p align="center">
 Feito com ♥ by Mayk Brito :wave: [Entre na nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
-
+</p>
