@@ -1,4 +1,5 @@
 <p align="center">
+  <strong> not working anymore </strong>
 <img width="70%" src="https://i.imgur.com/SroyvTi.png" alt="Covid Image"/>
 </p>
 
