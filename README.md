@@ -1,4 +1,4 @@
-<strong> not working anymore 👀</strong>
+<strong> It's not working anymore 👀. It'll be here just for consulting something that I've learned in this project</strong>
 
 <p align="center">
 <img width="70%" src="https://i.imgur.com/SroyvTi.png" alt="Covid Image"/>
