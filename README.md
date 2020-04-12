@@ -6,8 +6,8 @@
 <img width="70%" src="https://i.imgur.com/SroyvTi.png" alt="Covid Image"/>
 </p>
 
-<h1 align="center">Covid</h1>
-<p align="center">Projeto <strong>Covid-19</strong> desenvolvido afim de testar API de informações do Coronavirus 😷</p>
+<h1 align="center">Covid-19</h1>
+<p align="center">Projeto <strong>Covid-19</strong> desenvolvido a fim de testar API de informações do Coronavirus 😷</p>
 <p align="center">
   <a aria-label="Mayk" href="https://github.com/maykbrito/">
     <img src="https://img.shields.io/badge/mayk@rocketseat-35.0-informational?logo=medium"></img>
