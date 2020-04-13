@@ -57,4 +57,4 @@ Depois que o *merge* da sua *pull request* for feito, você pode deletar a sua *
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
 ---
-Feito com ♥ by Mayk Brito :wave: [Entre na nossa comunidade](https://discordapp.com/invite/gCRAFhc). COVID
+Feito com ♥ by Mayk Brito :wave: [Entre na nossa comunidade](https://discordapp.com/invite/gCRAFhc).
