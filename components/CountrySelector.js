@@ -20,10 +20,10 @@ export default function CountrySelector() {
     const options = Object.entries(countries.countries).map(([country, code], key) => (
         <option 
             key={key} 
-            value={code}
+            value={code.name}
             // selected={selectedCountry === code}
         >
-            {country}
+            {code.name}
         </option>
     ))
 
