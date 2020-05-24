@@ -101,13 +101,13 @@ export default function Instructions() {
             Não viaje se você tiver tosse e febre.
         </Instruction>
         <Instruction src={medicalMask}>
-            Se tiver dúvidas da sua situação, use máscaras.
+            Pense no coletivo, use máscaras.
         </Instruction>
         <Instruction src={washingHand}>
             Lave as mãos por cerca de 20 segundos, com sabão e água, após tocar em superfícies e animais.
         </Instruction>
         <Instruction src={stayAtHome}>
-            Fique em casa durante a quarentena, e só saia em necessidade extrema.
+            Fique em casa durante a quarentena, e só saia em necessidade extrema e com muita cautela.
         </Instruction>
     </InstructionsWrapper>
 }
