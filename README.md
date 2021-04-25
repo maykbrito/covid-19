@@ -1,60 +1,105 @@
 <p align="center">
-<strong> It's not working anymore 👀. It'll be here just for consulting something that I've learned in this project</strong>
+<img src="./assets/webcam.png" width="190px"/>
 </p>
 
-<p align="center">
-<img width="70%" src="https://i.imgur.com/SroyvTi.png" alt="Covid Image"/>
-</p>
-
-<h1 align="center">COVID-19</h1>
-<p align="center">Projeto <strong>COVID-19</strong> desenvolvido a fim de testar API de informações do coronavírus 😷</p>
-<p align="center">
-  <a aria-label="Mayk" href="https://github.com/maykbrito/">
-    <img src="https://img.shields.io/badge/mayk@rocketseat-35.0-informational?logo=medium"></img>
+<h1 align="center">Mini video me 📹</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="#" target="_blank">
+    <img alt="License: ISC" src="https://img.shields.io/badge/License-ISC-yellow.svg" />
   </a>
-  <a aria-label="Node" href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V12.md#12.14.1">
-    <img src="https://img.shields.io/badge/node.js@lts-12.14.1-informational?logo=Node.JS"></img>
-  </a>
-  <a aria-label="Next" href="https://nextjs.org/blog/next-9-3">
-    <img src="https://img.shields.io/badge/nextjs-9.3-informational"></img>
+  <a href="https://twitter.com/maykbrito" target="_blank">
+    <img alt="Twitter: maykbrito" src="https://img.shields.io/twitter/follow/maykbrito.svg?style=social" />
   </a>
 </p>
 
+> A small webcam player built with html, css, javascript and electron
 
-<p align="center">
-  <a href="#-instalação-e-execução">Instalação e execução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
-</p>
+*Tested only on MacOS and Windows 10*
 
-## 🚀 Instalação e execução
 
-_ps: Se precisar de ajuda para fazer um clone, esse [tutorial aqui](https://help.github.com/pt/github/creating-cloning-and-archiving-repositories/cloning-a-repository) vai te ajudar 💖_
+## Install
+With the terminal open in the project, execute the following command to be able to install the dependencies:
+```sh
+npm install
+```
 
-1. Abra o terminal do seu computador. Se estiver no Windows, pode ser o Prompt de Comando ou PowerShell. Caso use o WSL no Windows, use o Windows Terminal, usando o Ubuntu ou qualquer distribuição suportada pelo WSL. 
-2. Altere o diretório de trabalho atual para o local em que deseja ter o código do módulo salvo no seu computador.
-3. Faça um clone desse repositório rodando: <br> `git clone https://github.com/maykbrito/covid-19`;
-4. Entre na pasta rodando pelo terminal: `cd covid-19`;
-5. Rode `npm i` para instalar as dependências do projeto;
-6. Rode `npm start` para iniciar o servidor de desenvolvimento.
+## Usage
 
-## 🤔 Como contribuir
+You will need change your camera configuration in `./cameraConfig.js` because cameras have different proportions, like: width, height, frame rates and aspect ratios.
 
-Se quiser contribuir para esse repositório aqui, seja corrigindo algum problema, adicionando comentários ou melhorando a documentação, você pode seguir esse tutorial abaixo:
+You'll need to know about your camera OR try to not mess with `width`, `height`, `aspectRatio` and `frameRate` options, like this
 
-- Faça [um fork](https://help.github.com/pt/github/getting-started-with-github/fork-a-repo) desse repositório;
-- Entre no seu perfil no GitHub e faça um clone do repositório que você fez um *fork*;
-- Crie uma *branch* com a sua alteração: `git checkout -b minha-alteracao`;
-- Faça as alterações necessárias no código ou na documentação;
-- Faça *commit* das suas alterações: `git commit -m 'feat: Minha nova feature'`;
-- Faça *push* para a sua *branch*: `git push origin minha-alteracao`;
-- Agora é só abrir a sua *pull request* no repositório que você fez o *fork*;
+```js
+export default {
+    // width: 1920,
+    // height: 1080,
+    // aspectRatio: 1.77778,
+    // frameRate: 59.94,
+    flipHorizontal: true, // start flipped
+    rounded: true, // border radius for camera
+    scale: 1.1, // zoom?
+    
+    // move point of interest
+    // number will be converted to percent
+    horizontal: "-20", // 0 left - translateX
+    vertical: "0", // 0 top - translateY
+}
+```
 
-Depois que o *merge* da sua *pull request* for feito, você pode deletar a sua *branch*.
+Then, generate your app with command bellow
 
-## :memo: Licença
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+```sh
+npm run build
+```
 
 ---
-Feito com ♥ by Mayk Brito :wave: [Entre na nossa comunidade](https://discordapp.com/invite/gCRAFhc).
+## Shortcuts
+
+<table>
+  <thead>
+    <tr>
+      <th>Keystroke</th>
+      <th>Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>+/-</td>
+      <td>Zoom in/out (inside wrapper)</td>
+    </tr>
+    <tr>
+      <td>/</td>
+      <td>Flip horizontal</td>
+    </tr>
+    <tr>
+      <td>o</td>
+      <td>Toggle wrap rounded cam</td>
+    </tr>
+    <tr>
+      <td>Arrow up/ Down / Left / Right</td>
+      <td>Move cam position (inside wrapper)</td>
+    </tr>
+    <tr>
+      <td>0 or *</td>
+      <td>Increase size of cam</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+## Author
+
+👤 **Mayk Brito**
+
+* Twitter: [@maykbrito](https://twitter.com/maykbrito)
+* Github: [@maykbrito](https://github.com/maykbrito)
+* LinkedIn: [@maykbrito](https://linkedin.com/in/maykbrito)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
