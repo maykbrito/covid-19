@@ -1,12 +1,6 @@
 export const formatIntegerNumber = (number, separator = '.') => {
-    return String(number)
-    .split('')
-    .reverse()
-    .join('')
-    .split(/(\d\d\d)/)
-    .filter(elm => elm != '')
+    return Number(number)
+    .toLocaleString('pt')
+    .split('.')
     .join(separator)
-    .split('')
-    .reverse()
-    .join('')
 }
