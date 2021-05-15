@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import useStats from "../utils/useStats"
+import { formatIntegerNumber } from '../utils/helpers/number-mask-functions'
 
 const StatsGrid = styled.div`
     display: grid;
@@ -50,19 +51,19 @@ export default function Stats({url}) {
     return (
         <StatsGrid>
             <StatBlock>
-                <header>{stats.confirmed.value}</header>
+                <header>{formatIntegerNumber(stats.confirmed.value)}</header>
                 <article>
                     <h3>Confirmados</h3>
                 </article>
             </StatBlock>
             <StatBlock>
-                <header>{stats.recovered.value}</header>
+                <header>{formatIntegerNumber(stats.recovered.value)}</header>
                 <article>
                     <h3>Recuperados</h3>
                 </article>
             </StatBlock>
             <StatBlock>
-            <header>{stats.deaths.value}</header>
+            <header>{formatIntegerNumber(stats.deaths.value)}</header>
                 <article>
                     <h3>Mortes</h3>
                 </article>
